@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styleTicket.css" />
+    <title>Ticket</title>
+  </head>
+  <body>
+    <section id="mainPage">
+    
+    <form>
+      <a id="logoLink" href=""
+      ><img id="logoImage" src="images/LogoMedium.jpg" alt="Header Image"/></a>
+      <h1>Ticket</h1>
+      <fieldset id="fieldset1">
+        <label for="project">Project</label>
+        <select id="project">
+          <p id="issueID"></p>
+          <option value="Default">Default</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="summary">Short Summary</label>
+        <textarea name="Summary" id="summary" cols="30" rows="10"></textarea>
+      </fieldset>
+      <fieldset>
+        <label for="detailed">Detailed Description</label>
+        <textarea name="" id="detailed" cols="30" rows="10"></textarea>
+      </fieldset>
+      <fieldset>
+        <ul>
+          <li>
+            <label for="issueIde">Who Identified Issue</label>
+            <input type="text" id="issueIde" /> <br /><br />
+            <label for="assign">This problem is assigned to</label>
+            <select name="assign" id="assign">
+              <option value="none">none</option>
+            </select>
+          </li>
+          <li>
+            <label for="status">Status</label>
+            <select id="status">
+              <option value="open">To Do</option>
+              <option value="resolve">Resolved</option>
+              <option value="progress">In Progress</option>
+              <option value="overdue">Overdue</option>
+            </select>
+          </li>
+          <li>
+            <label for="priority">Priority </label>
+            <select id="priority">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </li>
+          <li>
+            <label for="targetdate">Target Resolution Date</label>
+            <input type="date" name="" id="targetdate" />
+          </li>
+          <li>
+            <label for="actualedate">Actual Date</label>
+            <input type="date" name="" id="actualedate" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset id="fieldset5">
+        <label for="resolustion">Resolution Summary</label>
+        <textarea name="" id="resolustion" cols="30" rows="10" default="-"></textarea>
+      </fieldset>
+      <input
+        type="button"
+        id="submitBtn"
+        value="submit ticket"
+        onclick="saveTicket()"
+      />
+    </form>
+  </section>
+    <script src="ticketscript.js"></script>
+  </body>
+</html>

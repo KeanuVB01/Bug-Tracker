@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Add Person</title>
+    <link rel="stylesheet" href="stylePerson.css">
+  </head>
+  <body>
+    <section id="mainPage">
+    <form>
+      <a id="logoLink" href=""
+      ><img id="logoImage" src="images/LogoMedium.jpg" alt="Header Image"/></a>
+      <h1>Person</h1>
+      <ul>
+        <li>
+          <label for="Name">Name:</label> 
+          <input type="text" id="Name" name="name" /> 
+        </li>
+        <li>
+          <label for="surname">Surname:</label> 
+          <input type="text" id="surname" name="surname" /> 
+        </li>
+        <li>
+          <label for="email">Email:</label> 
+          <input type="text" id="email" name="email" /> 
+        </li>
+        <li>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username"/>
+        </li>
+        <li>
+          <label for="peoPic">Profile Photo:</label> 
+          <input type="file" name="peoPic" id="peoPic" /> 
+        </li>
+        <li>
+          <input id="submitBtn" type="button" value="submitperson" onclick="addpeople()"/>
+          <p id="personadded"></p>
+        </li>
+        <li>  
+          <img src="" alt="" id="peopicdisplay" />
+        </li>
+      </ul>
+    </form>
+    </section>
+    <script src="person.js"></script>
+  </body>
+</html>

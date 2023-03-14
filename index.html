@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bug Tracking | Group A</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <section id="mainPage">
+      <header id="mainHeader">
+        <h1 id="mainTitle">Project Name:</h1>
+        <h2 id="dateCreated">All</h2>
+        <button id="btnRefresh" onclick="return refreshPage()">Refresh</button>
+          <a href="ticket.html" target="_blank">
+            <button id="btnAdd">Add Issue</button>
+          </a>
+        
+        <button id="btnLoadData" onclick="return loadData()">Load Demo Data</button>
+
+      </header>
+      <section id="ToDoSection" class="mainPageSection">
+        <header id="ToDoHeader" class="sectionsHeader">
+          <h3 class="sectionHeaderTitle">Open</h3>
+        </header>
+        
+      </section>
+
+      <section id="InProgress" class="mainPageSection">
+        <header id="InProgressHeader" class="sectionsHeader">
+          <h3 class="sectionHeaderTitle">In Progress</h3>
+        </header>
+      </section>
+
+      <section id="InReview" class="mainPageSection">
+        <header id="InReviewHeader" class="sectionsHeader">
+          <h3 class="sectionHeaderTitle">Overdue</h3>
+        </header>
+      </section>
+
+      <section id="Done" class="mainPageSection">
+        <header id="DoneHeader" class="sectionsHeader">
+          <h3 class="sectionHeaderTitle">Done</h3>
+        </header>
+      </section>
+    </section>
+
+    <section id="leftPage">
+        <a href="index.html"><img id="logoImage" src="images/LogoMedium.jpg" alt="Header Image"></a>
+        <nav>
+            <ul id="navList" class="navList">
+                <!-- <li class="navItem"><h2 class="navButton"><a id="btnProjects" href="projects.html" target="_blank">Projects</a></h2></li> -->
+                <li id = "systemSettings"><h2>System Settings</h2></li>
+                <li class="navItemButton" class="navItem"><h2 class="navButton"><a class="navText" id="btnProjects" href="#projectOverlay">Add Project</a></h2></li>
+                <li class="navItemButton" class="navItem"><h2 class="navButton"><a class="navText" id="btnProjects" href="person.html" target="_blank">Add Person</a></h2></li>
+                <!--this is for project-->
+                <li id="searchDetails" class="navItem">
+                  <label for="projectname" id="lblSearch" >Filter project</label>
+                  <select name="projectname" id="projectname">
+                  <option value="none">none</option>
+                </select>
+                </li>
+                <li class="navItem">
+                  <h2  id="navSearch" class="navButton"><input id="btnSearch" type="button" value="Filter" onclick="search()"></h2>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section id="projectOverlay">
+      <article id="projectArticle">
+          <a href="#" class="closeForm">&times;</a>
+          <form id="projectOverlayForm">
+              <h2>Project</h2>
+              <ul id="projectList">
+                  <li class="projectItem">
+                      <label for="projectName" class="formLabel">Project Name</label>
+                      <input type="text" id="projectName" placeholder="default" >
+                      <p id="projectID"></p>
+                  </li>
+                  <li class="projectItem">
+                      <button id="projectButton"><a id="projectLinkCLick" onclick="return testReturn()" href="#">Submit</a></button>
+                  </li>
+              </ul>
+          </form>
+      </article>
+    </section>
+    <section id="ticketOverlay">
+      <article id="ticketArticle">
+          <a id="exitForm" href="#" class="closeForm">Exit</a>
+          <form name="ticketForm">
+            <h1>Ticket</h1>
+            <fieldset id="fieldset1">
+              <label for="project">Project</label>
+              <label id="projectNameTicket" name="project"></label>
+            </fieldset>
+            <fieldset>
+              <label for="summarys">Short Summary</label>
+              <textarea name="Summary" id="summarys" cols="30" rows="10"></textarea>
+            </fieldset>
+            <fieldset>
+              <label for="detaileds">Detailed Description</label>
+              <textarea name="detailed" id="detaileds" cols="30" rows="10"></textarea>
+            </fieldset>
+            <fieldset>
+              <ul>
+                <li>
+                  <label for="issueIdes">Who Identified Issue</label>
+                  <input name="issueIde" type="text" id="issueIdes" /> <br /><br />
+                  <label for="assigndropdown">This problem is assigned to</label>
+                  <select  id="assigndropdown">
+                    
+                  </select>
+                </li>
+                <li>
+                  <label for="StatusSelect">Status</label>
+                  <select id="StatusSelect">
+                    
+                  </select>
+                </li>
+                <li>
+                  <label for="prioritydropdown">Priority </label>
+                  <select  id="prioritydropdown"></select>
+                </li>
+                <li>
+                  <label for="targetdates">Target Resolution Date</label>
+                  <input type="date" name="targetdate" id="targetdates" />
+                </li>
+                <li>
+                  <label for="actualedates">Actual Date</label>
+                  <input type="date" name="actualedate" id="actualedates" />
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset id="fieldset5">
+              <label for="resolustions">Resolution Summary</label>
+              <textarea name="" id="resolustions" cols="30" rows="10" default="-"></textarea>
+            </fieldset>
+            <label id="ticketNumberLabel"></label>
+            <input
+              type="button"
+              id="submitBtn"
+              value="submit button"
+              onclick="saveTicketTest()"
+            />
+          </form>
+      </article>
+  </section>
+
+  <section id="footerSection">
+    <p>
+      Created By: Keanu Ver Burgh
+    </p>
+  </section>
+    <script src="script.js"></script>
+  </body>
+</html>

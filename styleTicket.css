@@ -1,0 +1,95 @@
+@font-face { font-family: Montserrat; 
+    src: url('fonts/Montserrat/Montserrat-VariableFont_wght.ttf'); } 
+
+
+body{
+    min-width: 600px;
+    text-align: center;
+    width: 100%;
+    font-family: Montserrat;
+}
+form{
+    display: inline-block;
+    width: 420px;
+    text-align: center;
+    border: solid 2px rgb(221, 240, 244);
+    padding: 0px 20px 20px 20px;
+}
+h1{
+    font-family: Montserrat;
+}
+#logoLink{
+    cursor: default;
+}
+#logoImage{
+    width: 300px;
+    height: 80px;
+}
+#logoImage:hover{
+    box-shadow: 0px 0px 3px  rgb(84, 186, 206);
+}
+
+fieldset{
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+fieldset:hover{
+    background-color: rgb(249, 254, 255);
+    border: 2px solid rgb(84, 186, 206);
+    font-weight: bold;
+    box-shadow: 0px 0px 3px  rgb(147, 228, 245);
+}
+
+#fieldset1{
+    margin-top:5px
+}
+#fieldset5{
+    margin-bottom: 15px;
+}
+
+label{
+    padding: 10px;
+}
+ul{
+    padding-left: 10px;
+}
+li{
+    text-align: left;
+    list-style: none;
+    padding-top: 10px;
+}
+textarea{
+    border-radius:2px;
+    background-color: rgb(236, 247, 249);
+    width: 290px;
+    min-width: 290px;
+    max-width: 290px;
+    min-height: 25px;
+    max-height: 250px;
+}
+textarea:hover{
+    border: 1px solid rgb(78, 171, 190);
+}
+
+input{
+    font-family: Montserrat;
+    padding-left: 8px;
+    border: 1px solid rgb(45, 56, 58);
+    border-radius: 4px;
+    height: 18px;
+}
+input:hover{
+    border: 1px solid rgb(78, 171, 190);
+}
+
+#submitBtn{
+    height: 30px;
+    width: 120px;
+}
+#submitBtn:hover{
+    font-weight: bold;
+    background-color:rgb(147, 228, 245); 
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
