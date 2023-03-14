@@ -1,6 +1,16 @@
 # Bug-Tracker
 ## Group A: Bug Tracking Website
 ---
+
+### Quick Overview
+
+#### Features an easy to view UI with quick editing
+![Colour Info](https://user-images.githubusercontent.com/37045243/225098821-780bcf06-cf22-4558-8321-0ea0a38cead4.gif)
+
+#### Features quick project filtering
+![QuickFilter](https://user-images.githubusercontent.com/37045243/225099084-17e1a9f3-fcb7-446b-9bae-4e0671c71e69.gif)
+
+
 ### Table of Contents
 #### 1. Assumptions
 #### 2. Features
