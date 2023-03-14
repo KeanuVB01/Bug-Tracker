@@ -315,6 +315,8 @@ window.addEventListener("load", function () {
 function testReturn() {
   addproject();
   console.log("Confirmed");
+  location.href = ("#");
+  location.reload();
   //location.href = ("http://127.0.0.1:5500/GroupPage/index.html");
   //history.back();
 }

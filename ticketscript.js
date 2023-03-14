@@ -101,6 +101,7 @@ function saveTicket() {
     console.log(localStorage);
     //display added
     alert("Ticket added ticket id: Tic" + id);
+    window.close();
   } else {
     alert("Make sure that you fill in all the required  field");
   }
