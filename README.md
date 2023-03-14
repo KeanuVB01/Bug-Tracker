@@ -59,3 +59,5 @@
 4. View and/or search through issues
 5. Update issue(s)
 ---
+
+*The project was completed within a team for a module project, but was however changed afterwards by me for addition to my portfolio
