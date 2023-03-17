@@ -15,7 +15,6 @@
 #### 1. Assumptions
 #### 2. Features
 #### 3. Program Flow
-#### 4. Group Members & Tasks
 ---
 #### 1. Assumptions
 + Only an admin sign-on happens, thus no login page
